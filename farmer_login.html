@@ -1,8 +1,9 @@
 <DOCTYPE html>
 <html>
 <head>
-<title>AgroMart.lk</title>
+<title>Login</title>
 <link rel="stylesheet" href="CSS/main.css">
+<link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
 <header class="navbar">
@@ -10,14 +11,31 @@
         <img src="Assests/logo.png" alt="Logo" class="logo">
     </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#alerts">Alerts</a></li>
-            <li><a href="#markets">Markets</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="index.html#home" class="active">Home</a></li>
+            <li><a href="index.html#alerts">Alerts</a></li>
+            <li><a href="index.html#markets">Markets</a></li>
+            <li><a href="index.html#about">About Us</a></li>
             <li><a href="farmer_login.html" class="login">Login</a></li>
             <li><a href="farmer_register.html" class="register">Register</a></li>
         </ul>
 </header>
+<div class="login-box01">
+    <div class="login-box02">
+        <h2>Welcome Back</h2>
+        <form action="farmer_login.php" method="post">
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" required><br /><br />
+        
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" required><br /><br />
+
+            <a href="forgot_password.html">Forgot Password?</a><br /><br />
+
+            <input type="submit" value="Login">
+            <input type="button" value="Register" onclick="window.location.href='farmer_register.html'">
+        </form>
+    </div>
+</div>
         
 
 
